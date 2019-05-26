@@ -1,0 +1,23 @@
+<!--index.wxml-->
+
+<!-- 推荐歌单 -->
+<view class="title">推荐歌单</view>
+<view class="tj-group">
+  <navigator class="tj-item" wx:for="{{list}}" wx:key="{{id}}">
+    <image  src="{{item.picUrl}}" lazy-load="{{true}}" />
+    <text >{{item.name}}</text>
+  </navigator>
+</view>
+
+<!-- 最新歌曲 -->
+<view class="title">最新音乐</view>
+<view class="new-list">
+  <view  class="cell">
+    <navigator class="cell-item " >
+        <text class="muisc-name">残酷月光</text>
+        <text class="muisc-desc"> 费启鸣 - 残酷月光</text>
+    </navigator>
+    <image mode="aspectFill" src="/src/img/bofang.png" />
+  </view>
+</view>
+
