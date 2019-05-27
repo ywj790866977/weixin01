@@ -4,27 +4,48 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[]
+    list:[],
+    newList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  showdetail:function(e){
+    var mid = e.target.dataset.mid;
+    console.log(mid);
+    wx.navigateTo({
+      url: '../detail/detail?mid='+mid
+    });
+  },
   onLoad: function (options) {
     wx.request({
       url: 'http://localhost:3000/personalized',
       method: 'GET',
       success: (result) => {
-        // console.log(result.data)
         if(result.data.code === 200){
           var resList = result.data.result
           resList = resList.slice(0,6)
-          console.log(resList)
+          for (var i=0;i<resList.length;i++){
+            var newNum = (resList[i].playCount/10000).toFixed(1)
+            if(newNum.length>5) newNum = newNum.split(".")[0]
+            resList[i].playCount = newNum;
+          }
           this.setData({
             list:resList
           })
         }
-        // result.data
+      },
+    });
+    wx.request({
+      url: 'http://localhost:3000/personalized/newsong',
+      method: 'GET',
+      success: (result) => {
+        if(result.data.code === 200 ){
+          this.setData({
+            newList:result.data.result
+          })
+        }
       },
     });
   },

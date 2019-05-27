@@ -1,0 +1,49 @@
+<!--pages/detail/detail.wxml-->
+<!-- 歌单详情 -->
+<view class="u-plhead">
+    <view class="bg" style="background-image: url({{playlist.coverImgUrl}})"></view>
+    <view class="plhead_wrap ">
+        <view class="plhead_fl">
+            <image lazy-load src="{{playlist.coverImgUrl}}" />
+            <text class="lsthd_icon">歌单</text>
+            <text class="u-earp ">{{playlist.playCount}}</text>
+        </view>
+         <view class="plhead_fr">
+             <text class="lsthd_title">{{playlist.name}}</text>
+             <view class="lsthd_auth">
+                 <image lazy-load src="{{playlist.creator.avatarUrl}}" />
+                 <text class="auth-name">{{playlist.creator.nickname}}</text>
+             </view>
+         </view>
+    </view>
+</view>
+<!--  -->
+<view class="list-desc">
+    <view class="list-tag">
+        标签:
+        <text class="tag-item"  wx:for="{{playlist.tags}}" wx:key="{{index}}">{{item}}</text>
+    </view>
+    <view class="list-content">
+        简介:
+        <view class="content-switch" bindtap="switch">
+             <text class="{{textFlag==true?'textMore':'text'}}"  >
+            {{playlist.description}}
+            </text>
+            <image class="switch-img" src="{{textFlag==true?'/src/img/up.png':'/src/img/down.png'}}" mode="aspectFit" lazy-load  />
+        </view>
+    </view>
+</view>
+<!-- 歌单列表 -->
+<view class="list-title">
+    <text class="title-text">歌单列表</text>
+</view>
+<view class="new-list">
+  <view  class="cell" wx:for="{{playlist.tracks}}" wx:key="{{index}}">
+    <text style="color:#ccc;" >{{index + 1}}</text>
+    <view class="cell-item " >
+        <text class="muisc-name ell">{{item.name}}</text>
+        <text class="muisc-desc ell">  {{item.ar[0].name}} - {{item.name}} </text>
+    </view>
+    <image mode="aspectFill" src="/src/img/bofang.png" />
+  </view>
+</view>
