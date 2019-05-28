@@ -1,0 +1,24 @@
+<!--pages/play/play.wxml-->
+<view class="">
+    <view class="bg" style="background-image: url('//music.163.com/api/img/blur/109951164094358821'); opacity: 1;"></view>
+    <view class="">
+        <!-- 转盘 -->
+        <view class="m-song-wrap">
+            <view class="m-song-disc">
+                <view class="m-song-turn">
+                    <view class="m-song-rollwrap">
+                        <view class="m-song-img" >
+                            <image src="http://p1.music.126.net/-Csm8lip7m4AQ9zNvw8rtg==/109951164094358821.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0" />
+                        </view>
+                    </view>
+                </view>
+                <view class="m-song-plybtn"></view>
+            </view>
+        </view>
+        <!-- 歌词 -->
+        <view class="m-song-info">
+            <text class="m-song-name">Cross Me (feat. Chance the Rapper & PnB Rock)</text>
+            <text class=""></text>
+        </view>
+    </view>
+</view>

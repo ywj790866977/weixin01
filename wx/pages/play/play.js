@@ -1,44 +1,18 @@
-// pages/detail/detail.js
+// pages/play/play.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  switch:function(){
-    this.setData({
-      textFlag:!this.data.textFlag
-    })
-  },
   data: {
-    textFlag:true,
-    playlist:[]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      textFlag:false
-    })
-    var mid = options.mid
-    var reqTask = wx.request({
-      url: 'http://129.28.178.213:3000/playlist/detail?',
-      data: {id:mid},
-      method: 'GET',
-      success: (result) => {
-        var resList = result.data.playlist
-        var newCount = resList.playCount
-        newCount = (newCount/10000).toFixed(1);
-        resList.playCount = newCount
-        console.log(resList.playCount)
-        this.setData({
-          playlist:resList
-        })
-          console.log(result.data.playlist)
-      },
-    });
-      
+
   },
 
   /**

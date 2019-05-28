@@ -1,0 +1,108 @@
+/* pages/play/play.wxss */
+page{
+    font: 14px/1.5 Helvetica,sans-serif;
+    color: #333;
+}
+/* 背景 */
+.bg{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transform: scale(1.5);
+    transform-origin: center top;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    transition: opacity .3s linear;
+}
+.bg::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+}
+/* 转盘 */
+.m-song-disc {
+    width: 592rpx;
+    height: 592rpx;
+    position: relative;
+    margin: 0 auto;
+}
+.m-song-disc:after {
+    content: " ";
+    position: absolute;
+    width: 96px;
+    height: 137px;
+    top: 0;
+    left: 133px;
+    background-image: url(//s3.music.126.net/m/s/img/needle-ip6.png?be4ebbe…);
+    background-size: contain;
+    z-index: 5;
+}
+.m-song-turn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:100rpx;
+}
+.m-song-turn:before {
+    content: " ";
+    position: absolute;
+    left: 20rpx;
+    right: 0;
+    top: 30rpx;
+    bottom: 0;
+    z-index: 2;
+    background: url(//s3.music.126.net/m/s/img/disc.png?d3bdd10…) no-repeat;
+    background-size: contain;
+}
+.m-song-img{
+    position: relative;
+
+}
+.m-song-img image{
+    width: 60%;
+    height: 370rpx;
+    position: absolute;
+    top:130rpx;
+    left: 130rpx;
+    border-radius: 50%
+}
+
+
+.m-song-plybtn:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+.m-song-plybtn {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAACoCAMAAABDlVWGAAABJlBMV…ZR1LrPmQ0hKZfSXC7Fzr5LeD7uGoYBQBCGV56PS2g5ewGy+NkUNbjr9gAAAABJRU5ErkJggg==) 0 0 no-repeat;
+    background-size: contain;
+}
+.m-song-plybtn:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+.m-song-info{
+    margin-top:120rpx;
+    margin-left: 100rpx;
+}
+.m-song-name{
+    color: #fff;
+    font-size: 
+}

@@ -20,7 +20,7 @@ Page({
   },
   onLoad: function (options) {
     wx.request({
-      url: 'http://localhost:3000/personalized',
+      url: 'http://129.28.178.213:3000/personalized',
       method: 'GET',
       success: (result) => {
         if(result.data.code === 200){
@@ -38,7 +38,7 @@ Page({
       },
     });
     wx.request({
-      url: 'http://localhost:3000/personalized/newsong',
+      url: 'http://129.28.178.213:3000/personalized/newsong',
       method: 'GET',
       success: (result) => {
         if(result.data.code === 200 ){
