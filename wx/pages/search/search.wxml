@@ -1,2 +1,10 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="m-hmsrch">
+    <view class="gb-input">
+        <view class="m-input">
+            <view class="search-img"></view>
+            <input class="input" type="search" placeholder="搜索歌曲、歌手、专辑" />
+        </view>
+    </view>
+    <view class="m-default"></view>
+</view>

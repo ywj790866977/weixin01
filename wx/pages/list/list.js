@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'http://129.28.178.213:3000/top/list?idx=1',
+      method: 'GET',
+      success: (result) => {
+        var resList = result.data.playlist.tracks.slice(0,100)
+        this.setData({
+          list:resList
+        })
+      },
+    });
   },
 
   /**

@@ -51,6 +51,31 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+.new-list{
+  clear:both;
+}
+.list-title{
+  height:50rpx;
+  width:100%;
+  background-color: #eeeff0;
+  font-size: 12px;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  clear:both;
+}
+.list-desc{
+  padding:20rpx 30rpx;
+}
+.list-desc .list-tag{
+  margin-bottom: 20rpx;
+}
+.list-desc .list-tag .tag-item{
+  padding:5rpx 15rpx;
+  border: 1rpx rgba(0, 0, 0, 0.1) solid;
+  border-radius: 25rpx;
+  margin:0 10rpx;
+}
 /* 箭头 */
 /* .arrow{
   display: flex;

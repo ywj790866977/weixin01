@@ -1,1 +1,55 @@
 /* pages/list/list.wxss */
+page{
+    font: 14px/1.5 Helvetica,sans-serif;
+    color: #333;
+}
+ .ho-top {
+    position: relative;
+    /* padding-top: 38.9%; */
+    overflow: hidden;
+    width: 100%;
+    height: 290rpx;
+    background: url(//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee)  no-repeat;
+    background-size: contain;
+}
+.hmhot .ho-top:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+ .ho-top::after {
+    content: " ";
+    z-index: 1;
+    background-color: rgba(0,0,0,.2);
+}
+
+.hotopct{
+    padding-left: 40rpx;
+    display: flex;
+    flex-direction: column;
+    width: 300rpx;
+    justify-content: center;
+}
+.hmsprt {
+    margin-top:30rpx;
+    z-index: 5;
+    width: 300rpx;
+    height: 150rpx;
+    background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+    background-size: 330rpx 180rpx;
+    background-position: -40rpx -40rpx;
+    /* top:40rpx; */
+}
+.hottime{
+    color:hsla(0,0%,100%,.8);
+    margin-top:10rpx;
+    font-size: 12px;
+    
+}
+/* 列表 */
+
+
+
+

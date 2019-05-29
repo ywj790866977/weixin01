@@ -1,1 +1,31 @@
 /* pages/search/search.wxss */
+page{
+    font: 14px/1.5 Helvetica,sans-serif;
+    color: #333;
+}
+.m-input{
+    background: #ebecec;
+    color: #c9c9c9;
+    border-radius:30rpx;
+    /* padding: 30rpx; */
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    
+}
+.gb-input{
+    padding: 30rpx;
+    border-bottom: 1rpx solid rgb(0,0,0,.1)
+}
+.search-img{
+    width: 60rpx;
+    height: 60rpx;
+    background-image:  url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjYzljOWNhIiBkPSJNMjUuMTgxLDIzLjUzNWwtMS40MTQsMS40MTRsLTcuMzE1LTcuMzE0CgkJQzE0LjcwOSwxOS4xMDcsMTIuNDYsMjAsMTAsMjBDNC40NzcsMjAsMCwxNS41MjMsMCwxMEMwLDQuNDc3LDQuNDc3LDAsMTAsMGM1LjUyMywwLDEwLDQuNDc3LDEwLDEwYzAsMi4zNDItMC44MTEsNC40OS0yLjE2LDYuMTk1CgkJTDI1LjE4MSwyMy41MzV6IE0xMCwyYy00LjQxOCwwLTgsMy41ODItOCw4czMuNTgyLDgsOCw4YzQuNDE4LDAsOC0zLjU4Miw4LThTMTQuNDE4LDIsMTAsMnoiLz48L3N2Zz4=);
+    background-size: 30rpx 30rpx;
+    background-repeat: no-repeat;
+    background-position: 20rpx  15rpx;
+}
+.input{
+    font-size: 14px;
+    color: #333
+}

@@ -99,18 +99,7 @@ page{
     /* line-height:50%; */
 }
 /* 列表 */
-.list-desc{
-    padding:20rpx 30rpx;
-}
-.list-desc .list-tag{
-    margin-bottom: 20rpx;
-}
-.list-desc .list-tag .tag-item{
-    padding:5rpx 15rpx;
-    border: 1rpx rgba(0, 0, 0, 0.1) solid;
-    border-radius: 25rpx;
-    margin:0 10rpx;
-}
+
 .text{
     display: -webkit-box;
     white-space: pre-wrap;
@@ -131,18 +120,4 @@ page{
     height:60rpx;
     float: right;
     /* overflow: hidden; */
-}
-.new-list{
-    clear:both;
-}
-
-/* 列表 */
-.list-title{
-    height:50rpx;
-    width:100%;
-    background-color: #eeeff0;
-    font-size: 12px;
-    line-height: 50rpx;
-    padding-left: 20rpx;
-    clear:both;
 }

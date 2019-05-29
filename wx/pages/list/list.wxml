@@ -1,2 +1,38 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<view class="tabct">
+    <view class="hmhot">
+        <!-- banner -->
+        <view class="ho-top">
+            <view class="hotopct">
+                <view class="hmsprt hoticon"></view>
+                <view class="hottime">
+                    更新时间: 05月23日
+                </view>
+            </view>
+        </view>
+        <!-- 列表 -->
+        <view class=""></view>
+    </view>
+</view>
+<!-- 歌单列表 -->
+
+<view class="new-list">
+  <view  class="cell" wx:for="{{list}}" wx:key="{{index}}">
+    <text style="color:#ccc;" >{{index + 1}}</text>
+    <view class="cell-item " >
+        <text class="muisc-name ell">{{item.name}}</text>
+        <text class="muisc-desc ell">  {{item.ar[0].name}} - {{item.name}} </text>
+    </view>
+    <image mode="aspectFill" src="/src/img/bofang.png" />
+  </view>
+</view>
+<!-- <view class="new-list">
+  <view  class="cell" >
+    <text style="color:#ccc;" >1</text>
+    <view class="cell-item " >
+        <text class="muisc-name ell">心如止水</text>
+        <text class="muisc-desc ell">  ice Pajper - 成语接龙 </text>
+    </view>
+    <image mode="aspectFill" src="/src/img/bofang.png" />
+  </view>
+</view> -->

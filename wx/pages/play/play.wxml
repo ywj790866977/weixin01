@@ -8,8 +8,9 @@
                 <view class="m-song-turn">
                     <view class="m-song-rollwrap">
                         <view class="m-song-img" >
-                            <image src="http://p1.music.126.net/-Csm8lip7m4AQ9zNvw8rtg==/109951164094358821.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0" />
+                            <image bindtap="audioPlay" src="http://p1.music.126.net/-Csm8lip7m4AQ9zNvw8rtg==/109951164094358821.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0" />
                         </view>
+                        <!-- <audio id="myAudio" class="" controls src="http://www.170mv.com/kw/other.web.na01.sycdn.kuwo.cn/resource/n1/40/52/4239912080.mp3" /> -->
                     </view>
                 </view>
                 <view class="m-song-plybtn"></view>
